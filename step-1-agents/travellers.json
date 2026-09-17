@@ -1,0 +1,395 @@
+{
+  "organisation": "Aid Nordic",
+  "travellers": [
+    {
+      "user_id": "u-0102",
+      "display_name": "Signe Vestergaard",
+      "role": "country director",
+      "home_country": "DK",
+      "device_id": "d-1102",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Nairobi, KE",
+          "start": "2026-09-13",
+          "end": "2026-09-19",
+          "approved_by": "u-0208"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0117",
+      "display_name": "Mads Holmberg",
+      "role": "finance",
+      "home_country": "DK",
+      "device_id": "d-1117",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Amman, JO",
+          "start": "2026-09-15",
+          "end": "2026-09-22",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0134",
+      "display_name": "Ida Kjeldsen",
+      "role": "IT",
+      "home_country": "DK",
+      "device_id": "d-1134",
+      "device_compliant": true,
+      "mfa_method": "fido2_key",
+      "trips": [
+        {
+          "destination": "Dhaka, BD",
+          "start": "2026-09-14",
+          "end": "2026-09-21",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0149",
+      "display_name": "Jonas Brandt",
+      "role": "logistics",
+      "home_country": "DK",
+      "device_id": "d-1149",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Kampala, UG",
+          "start": "2026-09-16",
+          "end": "2026-09-25",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0163",
+      "display_name": "Emilie Soerensen",
+      "role": "MEAL",
+      "home_country": "DK",
+      "device_id": "d-1163",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Bogota, CO",
+          "start": "2026-09-10",
+          "end": "2026-09-16",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0208",
+      "display_name": "Elin Bergstrom",
+      "role": "country director",
+      "home_country": "SE",
+      "device_id": "d-1208",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Geneva, CH",
+          "start": "2026-09-14",
+          "end": "2026-09-16",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0221",
+      "display_name": "Oskar Lindgren",
+      "role": "finance",
+      "home_country": "SE",
+      "device_id": "d-1221",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Nairobi, KE",
+          "start": "2026-09-17",
+          "end": "2026-09-24",
+          "approved_by": "u-0208"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0236",
+      "display_name": "Sara Nystrom",
+      "role": "protection officer",
+      "home_country": "SE",
+      "device_id": "d-1236",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Beirut, LB",
+          "start": "2026-09-12",
+          "end": "2026-09-19",
+          "approved_by": "u-0208"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0247",
+      "display_name": "Henrik Akesson",
+      "role": "IT",
+      "home_country": "SE",
+      "device_id": "d-1247",
+      "device_compliant": true,
+      "mfa_method": "fido2_key",
+      "trips": []
+    },
+    {
+      "user_id": "u-0311",
+      "display_name": "Wanjiru Kamau",
+      "role": "country director",
+      "home_country": "KE",
+      "device_id": "d-1311",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Copenhagen, DK",
+          "start": "2026-09-14",
+          "end": "2026-09-18",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0325",
+      "display_name": "Brian Otieno",
+      "role": "logistics",
+      "home_country": "KE",
+      "device_id": "d-1325",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Kigali, RW",
+          "start": "2026-09-15",
+          "end": "2026-09-20",
+          "approved_by": "u-0311"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0338",
+      "display_name": "Amina Wekesa",
+      "role": "protection officer",
+      "home_country": "KE",
+      "device_id": "d-1338",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Addis Ababa, ET",
+          "start": "2026-09-16",
+          "end": "2026-09-19",
+          "approved_by": "u-0311"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0352",
+      "display_name": "Kevin Mutua",
+      "role": "IT",
+      "home_country": "KE",
+      "device_id": "d-1352",
+      "device_compliant": true,
+      "mfa_method": "fido2_key",
+      "trips": []
+    },
+    {
+      "user_id": "u-0366",
+      "display_name": "Grace Njeri",
+      "role": "MEAL",
+      "home_country": "KE",
+      "device_id": "d-1366",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Kampala, UG",
+          "start": "2026-09-18",
+          "end": "2026-09-23",
+          "approved_by": "u-0311"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0417",
+      "display_name": "Rania Haddad",
+      "role": "country director",
+      "home_country": "JO",
+      "device_id": "d-1417",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Brussels, BE",
+          "start": "2026-09-15",
+          "end": "2026-09-18",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0429",
+      "display_name": "Omar Khalil",
+      "role": "finance",
+      "home_country": "JO",
+      "device_id": "d-1429",
+      "device_compliant": true,
+      "mfa_method": "sms",
+      "trips": [
+        {
+          "destination": "Copenhagen, DK",
+          "start": "2026-09-19",
+          "end": "2026-09-26",
+          "approved_by": "u-0417"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0443",
+      "display_name": "Layla Nasser",
+      "role": "protection officer",
+      "home_country": "JO",
+      "device_id": "d-1443",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Beirut, LB",
+          "start": "2026-09-14",
+          "end": "2026-09-20",
+          "approved_by": "u-0417"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0458",
+      "display_name": "Tariq Mansour",
+      "role": "logistics",
+      "home_country": "JO",
+      "device_id": "d-1458",
+      "device_compliant": false,
+      "mfa_method": "authenticator_app",
+      "trips": []
+    },
+    {
+      "user_id": "u-0512",
+      "display_name": "Farhana Rahman",
+      "role": "MEAL",
+      "home_country": "BD",
+      "device_id": "d-1512",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Cox's Bazar, BD",
+          "start": "2026-09-13",
+          "end": "2026-09-20",
+          "approved_by": "u-0311"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0527",
+      "display_name": "Tanvir Hossain",
+      "role": "logistics",
+      "home_country": "BD",
+      "device_id": "d-1527",
+      "device_compliant": true,
+      "mfa_method": "sms",
+      "trips": [
+        {
+          "destination": "Nairobi, KE",
+          "start": "2026-09-15",
+          "end": "2026-09-19",
+          "approved_by": "u-0311"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0539",
+      "display_name": "Nusrat Jahan",
+      "role": "protection officer",
+      "home_country": "BD",
+      "device_id": "d-1539",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Geneva, CH",
+          "start": "2026-09-16",
+          "end": "2026-09-20",
+          "approved_by": "u-0311"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0546",
+      "display_name": "Rafiq Chowdhury",
+      "role": "finance",
+      "home_country": "BD",
+      "device_id": "d-1546",
+      "device_compliant": false,
+      "mfa_method": "authenticator_app",
+      "trips": []
+    },
+    {
+      "user_id": "u-0614",
+      "display_name": "Camila Restrepo",
+      "role": "country director",
+      "home_country": "CO",
+      "device_id": "d-1614",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": [
+        {
+          "destination": "Stockholm, SE",
+          "start": "2026-09-14",
+          "end": "2026-09-17",
+          "approved_by": "u-0102"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0628",
+      "display_name": "Andres Cardenas",
+      "role": "logistics",
+      "home_country": "CO",
+      "device_id": "d-1628",
+      "device_compliant": true,
+      "mfa_method": "sms",
+      "trips": [
+        {
+          "destination": "Cucuta, CO",
+          "start": "2026-09-15",
+          "end": "2026-09-19",
+          "approved_by": "u-0614"
+        }
+      ]
+    },
+    {
+      "user_id": "u-0641",
+      "display_name": "Valentina Ospina",
+      "role": "MEAL",
+      "home_country": "CO",
+      "device_id": "d-1641",
+      "device_compliant": true,
+      "mfa_method": "authenticator_app",
+      "trips": []
+    }
+  ]
+}

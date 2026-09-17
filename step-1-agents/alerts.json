@@ -1,0 +1,405 @@
+{
+  "organisation": "Aid Nordic",
+  "alerts": [
+    {
+      "alert_id": "A-1001",
+      "user_id": "u-0102",
+      "device_id": "d-1102",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-14T06:40:00Z",
+      "location": "Nairobi, KE",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Copenhagen, DK at 2026-09-13T20:10:00Z followed by sign-in from Nairobi, KE 10 hours later."
+    },
+    {
+      "alert_id": "A-1002",
+      "user_id": "u-0102",
+      "device_id": "d-1102",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-15T05:55:00Z",
+      "location": "Nairobi, KE",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "First sign-in from Kenya for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1003",
+      "user_id": "u-0102",
+      "device_id": "d-1102",
+      "alert_type": "new_device",
+      "timestamp": "2026-09-16T07:12:00Z",
+      "location": "Nairobi, KE",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Device d-1102 seen for the first time from Kenya. Device is Intune-registered."
+    },
+    {
+      "alert_id": "A-1004",
+      "user_id": "u-0117",
+      "device_id": "d-1117",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-15T14:30:00Z",
+      "location": "Amman, JO",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Copenhagen, DK at 2026-09-15T06:05:00Z followed by sign-in from Amman, JO 8 hours later."
+    },
+    {
+      "alert_id": "A-1005",
+      "user_id": "u-0117",
+      "device_id": "d-1117",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-17T06:20:00Z",
+      "location": "Amman, JO",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from Jordan, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1006",
+      "user_id": "u-0134",
+      "device_id": "d-1134",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-14T09:45:00Z",
+      "location": "Dhaka, BD",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Bangladesh, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1007",
+      "user_id": "u-0134",
+      "device_id": "d-1134",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-16T03:30:00Z",
+      "location": "Dhaka, BD",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Bangladesh outside the account's usual hours (08:30 local)."
+    },
+    {
+      "alert_id": "A-1008",
+      "user_id": "u-0149",
+      "device_id": "d-1149",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-16T15:50:00Z",
+      "location": "Kampala, UG",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from Copenhagen, DK at 2026-09-16T05:40:00Z followed by sign-in from Kampala, UG 10 hours later."
+    },
+    {
+      "alert_id": "A-1009",
+      "user_id": "u-0149",
+      "device_id": "d-1149",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-18T06:05:00Z",
+      "location": "Kampala, UG",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Uganda, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1010",
+      "user_id": "u-0163",
+      "device_id": "d-1163",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-14T13:10:00Z",
+      "location": "Bogota, CO",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Colombia, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1011",
+      "user_id": "u-0208",
+      "device_id": "d-1208",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-14T11:25:00Z",
+      "location": "Geneva, CH",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from Switzerland, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1012",
+      "user_id": "u-0221",
+      "device_id": "d-1221",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-17T16:15:00Z",
+      "location": "Nairobi, KE",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Stockholm, SE at 2026-09-17T05:30:00Z followed by sign-in from Nairobi, KE 11 hours later."
+    },
+    {
+      "alert_id": "A-1013",
+      "user_id": "u-0236",
+      "device_id": "d-1236",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-14T07:40:00Z",
+      "location": "Beirut, LB",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Lebanon, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1014",
+      "user_id": "u-0311",
+      "device_id": "d-1311",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-14T13:05:00Z",
+      "location": "Copenhagen, DK",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from Nairobi, KE at 2026-09-14T03:20:00Z followed by sign-in from Copenhagen, DK 10 hours later."
+    },
+    {
+      "alert_id": "A-1015",
+      "user_id": "u-0311",
+      "device_id": "d-1311",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-16T07:00:00Z",
+      "location": "Copenhagen, DK",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Denmark, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1016",
+      "user_id": "u-0325",
+      "device_id": "d-1325",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-15T12:35:00Z",
+      "location": "Kigali, RW",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Rwanda, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1017",
+      "user_id": "u-0338",
+      "device_id": "d-1338",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-16T10:15:00Z",
+      "location": "Addis Ababa, ET",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from Ethiopia, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1018",
+      "user_id": "u-0417",
+      "device_id": "d-1417",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-15T12:50:00Z",
+      "location": "Brussels, BE",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Amman, JO at 2026-09-15T04:10:00Z followed by sign-in from Brussels, BE 9 hours later."
+    },
+    {
+      "alert_id": "A-1019",
+      "user_id": "u-0417",
+      "device_id": "d-1417",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-17T07:30:00Z",
+      "location": "Brussels, BE",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Belgium, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1020",
+      "user_id": "u-0443",
+      "device_id": "d-1443",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-14T14:20:00Z",
+      "location": "Beirut, LB",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from Lebanon, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1021",
+      "user_id": "u-0512",
+      "device_id": "d-1512",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-14T04:50:00Z",
+      "location": "Cox's Bazar, BD",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from a new city within the home country, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1022",
+      "user_id": "u-0527",
+      "device_id": "d-1527",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-15T13:40:00Z",
+      "location": "Nairobi, KE",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Dhaka, BD at 2026-09-15T02:30:00Z followed by sign-in from Nairobi, KE 11 hours later."
+    },
+    {
+      "alert_id": "A-1023",
+      "user_id": "u-0539",
+      "device_id": "d-1539",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-16T15:05:00Z",
+      "location": "Geneva, CH",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from Switzerland, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1024",
+      "user_id": "u-0614",
+      "device_id": "d-1614",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-15T08:45:00Z",
+      "location": "Stockholm, SE",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Sweden, not seen for this account in 90 days."
+    },
+    {
+      "alert_id": "A-1025",
+      "user_id": "u-0539",
+      "device_id": "d-1539",
+      "alert_type": "new_device",
+      "timestamp": "2026-09-18T08:10:00Z",
+      "location": "Geneva, CH",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Device d-1539 seen for the first time outside the home country. Device is Intune-registered."
+    },
+    {
+      "alert_id": "A-1026",
+      "user_id": "u-0247",
+      "device_id": "d-9911",
+      "alert_type": "new_device",
+      "timestamp": "2026-09-16T00:15:00Z",
+      "location": "Stockholm, SE",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Sign-in from an unregistered device at 02:15 local. No Intune record for the device."
+    },
+    {
+      "alert_id": "A-1027",
+      "user_id": "u-0352",
+      "device_id": "d-1352",
+      "alert_type": "leaked_credentials",
+      "timestamp": "2026-09-15T11:20:00Z",
+      "location": "Nairobi, KE",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Credentials for this account found in a public paste published on 2026-09-15."
+    },
+    {
+      "alert_id": "A-1028",
+      "user_id": "u-0546",
+      "device_id": "d-1546",
+      "alert_type": "mfa_fatigue",
+      "timestamp": "2026-09-16T21:04:00Z",
+      "location": "Dhaka, BD",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "14 authenticator push prompts between 03:00 and 03:06 local (Dhaka); none approved. Device d-1546 is non-compliant."
+    },
+    {
+      "alert_id": "A-1029",
+      "user_id": "u-0458",
+      "device_id": "d-1458",
+      "alert_type": "token_anomaly",
+      "timestamp": "2026-09-18T09:35:00Z",
+      "location": "Amman, JO",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Refresh token issued to d-1458 replayed from a second IP within 3 minutes. Device is non-compliant and there is no approved trip."
+    },
+    {
+      "alert_id": "A-1030",
+      "user_id": "u-0641",
+      "device_id": "d-1641",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-16T18:40:00Z",
+      "location": "Lagos, NG",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Nigeria. No trip registered for this user."
+    },
+    {
+      "alert_id": "A-1031",
+      "user_id": "u-0221",
+      "device_id": "d-1221",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-14T08:30:00Z",
+      "location": "Manila, PH",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Stockholm, SE at 2026-09-14T07:00:00Z followed by sign-in from Manila, PH 90 minutes later. Registered trip does not start until 2026-09-17 and is to Nairobi."
+    },
+    {
+      "alert_id": "A-1032",
+      "user_id": "u-0527",
+      "device_id": "d-1527",
+      "alert_type": "leaked_credentials",
+      "timestamp": "2026-09-16T10:05:00Z",
+      "location": "Nairobi, KE",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Credentials for this account offered for sale on a criminal marketplace. User is on an approved trip; MFA method is SMS."
+    },
+    {
+      "alert_id": "A-1033",
+      "user_id": "u-0117",
+      "device_id": "d-1117",
+      "alert_type": "mfa_fatigue",
+      "timestamp": "2026-09-19T00:02:00Z",
+      "location": "Amman, JO",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "11 authenticator push prompts between 03:00 and 03:05 local (Amman); none approved. User is on an approved trip to Amman."
+    },
+    {
+      "alert_id": "A-1034",
+      "user_id": "u-0338",
+      "device_id": "d-1338",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-15T22:10:00Z",
+      "location": "Sao Paulo, BR",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Brazil. Registered trip starts 2026-09-16 and is to Addis Ababa."
+    },
+    {
+      "alert_id": "A-1035",
+      "user_id": "u-0134",
+      "device_id": "d-1134",
+      "alert_type": "token_anomaly",
+      "timestamp": "2026-09-19T05:20:00Z",
+      "location": "Singapore, SG",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "Session token for d-1134 used from Singapore while the device signed in from Dhaka 12 minutes earlier."
+    },
+    {
+      "alert_id": "A-1036",
+      "user_id": "u-0163",
+      "device_id": "d-1163",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-17T12:30:00Z",
+      "location": "Bogota, CO",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Colombia. Registered trip to Bogota ended 2026-09-16."
+    },
+    {
+      "alert_id": "A-1037",
+      "user_id": "u-0443",
+      "device_id": "d-9921",
+      "alert_type": "new_device",
+      "timestamp": "2026-09-17T16:45:00Z",
+      "location": "Beirut, LB",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from unregistered device d-9921 during an approved trip to Beirut. Registered device d-1443 also active."
+    },
+    {
+      "alert_id": "A-1038",
+      "user_id": "u-0236",
+      "device_id": "d-1236",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-17T19:20:00Z",
+      "location": "Amsterdam, NL",
+      "ip_masked": "192.0.2.xxx",
+      "detail": "IP resolves to a commercial VPN provider egress. User is on an approved trip to Beirut."
+    },
+    {
+      "alert_id": "A-1039",
+      "user_id": "u-0366",
+      "device_id": "d-1366",
+      "alert_type": "unfamiliar_location",
+      "timestamp": "2026-09-17T15:55:00Z",
+      "location": "Kampala, UG",
+      "ip_masked": "203.0.113.xxx",
+      "detail": "Sign-in from Uganda. Registered trip to Kampala starts 2026-09-18."
+    },
+    {
+      "alert_id": "A-1040",
+      "user_id": "u-0429",
+      "device_id": "d-1429",
+      "alert_type": "impossible_travel",
+      "timestamp": "2026-09-19T09:40:00Z",
+      "location": "Istanbul, TR",
+      "ip_masked": "198.51.100.xxx",
+      "detail": "Sign-in from Amman, JO at 2026-09-19T04:15:00Z followed by sign-in from Istanbul, TR 5 hours later. Registered trip is to Copenhagen starting today; Istanbul is a plausible transit hub."
+    }
+  ]
+}

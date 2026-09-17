@@ -1,0 +1,27 @@
+{
+    "name": "Wayfarer",
+    "image": "mcr.microsoft.com/devcontainers/python:3.11-bookworm",
+    "features": {
+        "ghcr.io/devcontainers/features/azure-cli:1": {
+            "installBicep": false
+        }
+    },
+    "postCreateCommand": "az config set extension.dynamic_install_allow_preview=true && pip3 install --upgrade pip && pip3 install --user -r requirements.txt",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy",
+                "charliermarsh.ruff",
+                "humao.rest-client"
+            ],
+            "settings": {
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "workbench.editorAssociations": {
+                    "*.md": "vscode.markdown.preview.editor"
+                }
+            }
+        }
+    }
+}

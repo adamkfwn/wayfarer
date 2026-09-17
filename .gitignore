@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.ruff_cache/
+
+# Environment
+.env
+*.env.local
+
+# Generated outputs
+step-1-agents/results.jsonl
+step-3-evaluate/eval_data.jsonl
+step-3-evaluate/evaluation_results.json
+step-4-workflow/shift_summary.json
+
+# IDE and OS
+.vscode/
+.idea/
+.DS_Store
+
+# Azure
+.azure/
