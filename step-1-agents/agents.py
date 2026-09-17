@@ -75,6 +75,7 @@ class TravelContext(BaseModel):
 class ResponsePlan(BaseModel):
     alert_id: str
     disposition: Disposition
+    severity: Severity
     requires_approval: bool
     policy_citation: str
     user_message: str
@@ -122,9 +123,12 @@ device_id before answering. An activity is explained only when all of these hold
 - the alert_type is impossible_travel, unfamiliar_location or new_device.
 leaked_credentials, mfa_fatigue and token_anomaly are never explained by travel.
 
-Set confidence between 0 and 1. Sign-ins within 48 hours of a trip boundary, transit
-hubs, VPN egress and unregistered devices during a trip are not explained; say so in the
-evidence with a lower confidence. List each fact you relied on as one evidence string.
+Set confidence between 0 and 1. A sign-in on any date from trip start to trip end
+inclusive is inside the trip. A sign-in up to 48 hours before the start or after the end
+is a trip-boundary case: not explained, note the boundary in the evidence. Transit hubs,
+VPN egress and unregistered devices during a trip are not explained either. The first
+sign-in from the home country in an impossible_travel pair is the departure and does not
+count against the traveller. List each fact you relied on as one evidence string.
 
 {JSON_ONLY}
 Schema: {{"alert_id": str, "explained": bool, "confidence": float, "evidence": [str]}}
@@ -137,6 +141,7 @@ You receive an alert, its triage and its travel context as JSON. Propose the res
 Use file search over the Aid Nordic policies to find the rule that applies, and cite it
 as file name plus section, for example "incident-playbook.md section 3.4".
 disposition must be one of: dismiss, require_mfa, block_and_revoke, escalate_human.
+severity is the final severity stated by the playbook section you apply, not the triage severity.
 If no policy section clearly covers the case, return escalate_human and say why.
 
 Rules that always hold:
@@ -150,14 +155,14 @@ language, without IP addresses or technical identifiers, and states that the dec
 was prepared with AI assistance and reviewed by the IT Security team.
 
 {JSON_ONLY}
-Schema: {{"alert_id": str, "disposition": str, "requires_approval": bool,
-"policy_citation": str, "user_message": str, "rationale": str}}
+Schema: {{"alert_id": str, "disposition": str, "severity": "low|medium|high|critical",
+"requires_approval": bool, "policy_citation": str, "user_message": str, "rationale": str}}
 """
 
 
 def connect() -> tuple[AIProjectClient, OpenAI]:
     client = AIProjectClient(endpoint=PROJECT_CONNECTION_STRING, credential=DefaultAzureCredential())
-    return client, client.get_openai_client()
+    return client, client.get_openai_client().with_options(max_retries=8)
 
 
 def ensure_vector_store(openai_client: OpenAI) -> str:
@@ -260,7 +265,8 @@ def _merge(alert: dict, triage: Triage, context: TravelContext, plan: ResponsePl
         "alert_id": alert["alert_id"],
         "user_id": alert["user_id"],
         "alert_type": triage.alert_type,
-        "severity": triage.severity,
+        "severity": plan.severity,
+        "initial_severity": triage.severity,
         "summary": triage.summary,
         "explained": context.explained,
         "confidence": context.confidence,
@@ -311,8 +317,8 @@ def main():
         sys.exit(1)
 
     client, openai_client = connect()
-    print("=== Creating agents ===")
-    create_agents(client, openai_client)
+    print("=== Ensuring agents ===")
+    ensure_agents_deployed(client, openai_client)
 
     alerts = load_alerts()
     print(f"\n=== Triaging {len(alerts)} alerts ===")
