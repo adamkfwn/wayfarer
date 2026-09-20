@@ -10,7 +10,9 @@ GenAI tracing switched on for the Wayfarer agents, with message content capture 
 
 Tracing records every agent call: timing, token counts, tool calls, status. With `OTEL_INSTRUMENTATION_GENAI_CAPTURE_MESSAGE_CONTENT=true` it also records the full prompt and response. For Wayfarer those contain sign-in locations, device ids and travel dates for named staff. Aid Nordic's AI use policy (section 4.4) says that content must not be stored in monitoring traces, so `deploy.sh` writes the variable as `false` and `monitor.py` refuses to run if it is `true`.
 
-You still get latency, cost, tool-call counts, errors and the outcome of each run. You lose the ability to read what the model saw from the trace alone. That is the trade: the evidence trail lives in `results.jsonl` and the evaluation in step 3, not in the telemetry.
+You still get latency, cost, tool-call counts, errors and the outcome of each run. You lose the ability to read what the model saw from the trace alone. That is the trade: the evidence trail lives in `results.jsonl` and the evaluation in step 3, not in the telemetry
+
+The flag governs only the spans this application emits. The Foundry service emits its own spans into the same workspace with conversation content included, and the portal offers no switch for that. This is why identifiers are pseudonymised and IPs masked before any agent sees them.
 
 ## What to run
 
@@ -43,3 +45,4 @@ In the Azure portal, open the Application Insights resource, then Investigate an
 - [ ] The triage appears in the Foundry Traces view with spans for all three agents and their tool calls
 - [ ] The same run is visible in Application Insights transaction search
 - [ ] No prompt or response text appears in any span
+- [ ] Application spans in Application Insights carry no message content; the Foundry-emitted inner spans do, and there is no project setting to change that. Identifiers in those spans are pseudonymous and IPs masked.
