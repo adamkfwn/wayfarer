@@ -17,12 +17,10 @@ A scored evaluation of the step 1 results against known correct outcomes, upload
 `evaluate.py` runs three evaluators over `step-1-agents/results.jsonl`:
 
 - Exact match. Compares `disposition`, `severity` and `explained` with the expected values. Deterministic.
-- Groundedness. An LLM judge scores 1 to 5 whether the response is supported by the context: the alert, the traveller record and the incident playbook. Catches a plausible rationale that does not follow from the evidence.
+- Groundedness and task adherence can be run in the portal against `eval_portal.jsonl` (see below). They are not part of the gate.
 - Task adherence. An LLM judge checks whether the response did what the task asked: classify, check travel, propose a disposition with a citation, flag approval where required.
 
-Thresholds: disposition match at least 0.9 and mean groundedness at least 4.0. The script exits non-zero if either is missed, so it can gate a pipeline.
-
-## What to run
+Thresholds: disposition match and severity match at least 0.9. The script exits non-zero if either is missed, so it can gate a pipeline.## What to run
 
 Step 1 must have produced `results.jsonl`. Then:
 
