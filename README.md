@@ -13,7 +13,7 @@ Everything here is synthetic. Aid Nordic is fictional, the staff are fictional, 
 | 0 | `step-0-setup/` | Provision a Foundry project, model and Application Insights, or reuse one |
 | 1 | `step-1-agents/` | Create the three agents and run 40 alerts through them |
 | 2 | `step-2-monitor/` | Turn on tracing with content capture off and read the traces |
-| 3 | `step-3-evaluate/` | Score the results: disposition match, groundedness, task adherence |
+| 3 | `step-3-evaluate/` | Score the results against ground truth: disposition, severity and travel explanation |
 | 4 | `step-4-workflow/` | Orchestrate the agents from code and expose them behind an Entra-protected API |
 
 Each step has a README with what to run, what to look for and how to know it worked. Work through them in order.

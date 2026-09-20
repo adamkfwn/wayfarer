@@ -25,7 +25,7 @@ alerts.json ──> alert-triage-agent ──> travel-context-agent ──> resp
 | `workflow.py` | Python | Shift-level orchestration and summary |
 | `api.py` | FastAPI | HTTP front door with Entra ID bearer validation |
 | Application Insights | Azure | Traces with content capture off |
-| Evaluation | `azure-ai-evaluation` | Exact match, groundedness, task adherence against `expected.jsonl` |
+| Evaluation | `azure-ai-evaluation` | Exact match on disposition, severity and explained against `expected.jsonl` |
 
 ## Data flow for one alert
 

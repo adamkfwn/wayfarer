@@ -38,7 +38,7 @@ Wrong disposition on a clear case: rerun the single alert through `agents.triage
 
 Agent failed with a JSON error: the result line has an `error` field. The run continues past it. Rerun that alert on its own. If several fail in one shift, check the model deployment in the Foundry portal.
 
-Groundedness dropped below 4.0 in step 3: read the lowest rows. A rationale that cites the right section but invents a detail is a prompt problem. A rationale that cites the wrong section is a retrieval problem; check the vector store has all four policy files.
+Severity or disposition match dropped in step 3: read the failing rows. A wrong disposition with the right citation is a prompt problem. A wrong citation is a retrieval problem; check the vector store has all four policy files.
 
 Tracing shows no runs: confirm Application Insights is connected under Tracing in the Foundry portal and that `monitor.py` passes its checks.
 
